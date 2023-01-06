@@ -62,7 +62,7 @@
   line-height: 72px;
 }
 
-.header__span_accent {
+.header__span-accent {
   display: block;
   color: #2f80ed;
   font-family: "Noto Serif", "Times New Roman", serif;
@@ -97,7 +97,7 @@
   flex-direction: row;
 }
 
-.header__footer_hours {
+.header__footer-hours {
   display: flex;
   flex-direction: column;
   position: absolute;

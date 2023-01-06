@@ -10,7 +10,7 @@
   z-index: 0;
 }
 
-.reservation__title_box {
+.reservation__title-box {
   display: flex;
   justify-content: center;
   margin-top: 100px;
@@ -80,7 +80,7 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.form__checkbox_container {
+.form__checkbox-container {
   display: flex;
   justify-content: center;
   align-items: center;

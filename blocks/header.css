@@ -8,6 +8,7 @@
   background-position: center;
   background-size: cover;
   position: relative;
+  z-index: 0;
 }
 
 .logo {
@@ -88,6 +89,7 @@
   position: absolute;
   right: 5px;
   top: 124px;
+  z-index: -1;
 }
 
 .header__footer {

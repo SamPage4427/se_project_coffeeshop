@@ -66,9 +66,8 @@
         <p>200 Success Avenue, The Town of Practicum</p>
       </div>
     </header>
-
     <main class="page">
-      <section class="menu">
+      <section class="menu" id="menu">
         <div class="menu__title_box">
           <h2 class="menu__title">Menu</h2>
         </div>
@@ -165,8 +164,152 @@
           </ul>
         </div>
       </section>
+      <section class="recipes" id="recipes">
+        <h2 class="recipes__title">Recipes</h2>
+        <p class="recipes__subtitle">
+          Check out some recipes we've collected for your home-brewing
+          convenience:
+        </p>
+        <ul class="recipes__videos">
+          <li>
+            <iframe
+              src="https://www.youtube.com/embed/ZuQu12vMQZM"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              class="recipes__iframe"
+            ></iframe>
+            <p class="recipes__video-caption">
+              <span>Espresso Guide for Beginners</span><span>~7 min</span>
+            </p>
+          </li>
+          <li>
+            <iframe
+              src="https://www.youtube.com/embed/pAHr5ZKbbso"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              class="recipes__iframe"
+            ></iframe>
+            <p class="recipes__video-caption">
+              <span>Iced Coffee Ideas</span><span>~4 min</span>
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="reservation" id="reservation">
+        <div class="reservation__title_box">
+          <h2 class="reservation__title">Book a table</h2>
+        </div>
+        <form class="reservation__form">
+          <fieldset class="form__fieldset">
+            <label for="input-name" class="form__label">Name *</label>
+            <input
+              type="text"
+              class="form__input"
+              id="input-name"
+              placeholder="Name Surname"
+              required
+            />
+            <label for="input-number" class="form__label"
+              >Number of guests *</label
+            >
+            <input
+              type="number"
+              class="form__input"
+              id="input-number"
+              placeholder="1-8"
+              min="1"
+              max="8"
+              required
+            />
+            <label for="input-datetime" class="form__label"
+              >Date & time *</label
+            >
+            <input
+              type="datetime-local"
+              id="input-datetime"
+              class="form__input"
+              required
+            />
+            <label for="input-email" class="form__label">Your email *</label>
+            <input
+              type="email"
+              id="input-email"
+              class="form__input"
+              placeholder="email@email.com"
+              required
+            />
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <button type="submit" class="form__button">Book a table</button>
+          </fieldset>
+          <div class="form__checkbox_container">
+            <input
+              type="checkbox"
+              id="input-checkbox"
+              class="form__checkbox"
+              required
+            />
+            <label for="input-checkbox" class="form__label"
+              >I agree with the terms of use</label
+            >
+          </div>
+        </form>
+      </section>
+      <section class="about">
+        <h2 class="about__title">About the coffee shop</h2>
+        <div class="about__content">
+          <p class="about__paragraph">
+            Our coffee shop is located in the Practicum Library's hall. It
+            features 6 tables and free WiFi.
+          </p>
+          <p class="about__paragraph">
+            Our main mission is keeping guests cozy and energized.
+          </p>
+          <p class="about__paragraph">
+            Besides that, we try to reduce our environment impact - so we don't
+            sell single-use cups. But you can buy one of our reusable cups!
+          </p>
+        </div>
+        <div class="about__circle"></div>
+        <div class="about__circle about__circle_animation_blurred"></div>
+      </section>
     </main>
-
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__content">
+        <img
+          src="./images/practicum_logo.svg"
+          alt="practicum-logo"
+          class="footer__logo"
+        />
+        <div class="footer__social_lists">
+          <h4 class="footer__social-heading">Social media</h4>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a class="footer__social-link" href="#"
+                ><img
+                  src="./images/facebook_white.svg"
+                  alt="facebook-logo"
+                  class="footer__social-icon"
+                />Facebook</a
+              >
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__social-link" href="#"
+                ><img
+                  src="./images/instagram_white.svg"
+                  alt="instagram-logo"
+                  class="footer__social-icon"
+                />Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copyright">&copy; 2023 Sam Page</p>
+    </footer>
   </body>
 </html>

@@ -5,10 +5,8 @@
   background-position: center;
   background-size: cover;
   color: #fff;
-}
-
-.menu__title-box {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -17,18 +15,14 @@
   color: #fff;
   display: flex;
   justify-content: center;
-  align-items: center;
+  text-align: center;
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
-  margin: 100px 0 0;
-}
-
-.menu__subtitle-box {
-  display: flex;
-  justify-content: center;
+  margin: 100px auto 0;
+  padding: 0;
 }
 
 .menu__subtitle {
@@ -43,49 +37,13 @@
   font-style: normal;
   font-size: 20px;
   line-height: 30px;
-  margin: 24px 0 0;
+  margin: 24px auto 0;
 }
 
 .menu__cards {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 100px;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-}
-
-.card__list {
-  padding: 0;
-  width: 600px;
-  max-width: 600px;
-}
-
-.card__title {
-  font-family: "Inter", Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 30px;
-  margin: 0 0 32px;
-  padding: 0;
-}
-
-.card__list-item {
-  display: flex;
-  font-family: "Noto Serif", "Times New Roman", serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  margin: 0 0 16px;
-  padding: 0;
-}
-
-.card__list-divider {
-  border-bottom: 1px solid #fff;
-  flex-grow: 4;
+  margin: 100px 100px 0px 100px;
+  gap: 100px;
 }
